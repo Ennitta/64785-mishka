@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <img src="#" class="page-header__logo" alt="Мишка">
+      <nav class="main-nav">
+        <span class="main-nav__toggle-close"></span>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+           <li class="main-nav__item"><input type="search" name="search" placeholder="Поиск по сайту"></li>
+           <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+      <span class="page-header__toggle-open"></span>
+    </header>
+    <main class="content">
+      <h1 class="content__title">Вязание на заказ</h1>
+      <p class="content__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="form" action="/echo" method="post">
+        <div class="form__type">
+          <div class="form__title">Тип</div>
+          <ul class="form__list">
+            <li>
+              <input type="radio" id="rb-1" checked>
+              <label for="rb-1">Аксессуар для  интерьера</label>
+            </li>
+            <li>
+              <input type="radio" id="rb-2">
+              <label for="rb-2">Детская игрушка</label>
+            </li>
+          </ul>
+      </div>
+      <div class="form__color">
+        <div class="form__title">Цвет</div>
+        <ul class="form__list">
+          <li>
+            <input type="checkbox" id="chb-1">
+            <label for="chb-1">Белый</label>
+          </li>
+          <li>
+            <input type="checkbox" id="chb-2">
+            <label for="chb-2">Серый</label>
+          </li>
+          <li>
+            <input type="checkbox" id="chb-3">
+            <label for="chb-3">«Тиффани»</label>
+          </li>
+          <li>
+            <input type="checkbox" id="chb-4">
+            <label for="chb-4">Черный</label>
+          </li>
+          <li>
+            <input type="checkbox" id="chb-5">
+            <label for="chb-5">Розовый</label>
+          </li>
+          <li>
+            <input type="checkbox" id="chb-6">
+            <label for="chb-6">Оранжевый</label>
+          </li>
+        </ul>
+      </div>
+      <div class="form__login">
+        <div class="form__title">ФИО</div>
+        <div class="form__login-wrapper">
+          <div class="form__login-name">
+            <label for="name">Имя:</label>
+            <input type="text" name="name" id="name" placeholder="Введите ваше имя*">
+          </div>
+          <div class="form__login-surname">
+            <label for="surname">Фамилия:</label>
+            <input type="text" name="surname" id="surname" placeholder="Укажите фамилию*">
+          </div>
+          <div class="form__login-middlename">
+            <label for="middle-name">Отчество:</label>
+            <input type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
+          </div>
+        </div>
+      </div>
+      <div class="form__phone">
+        <div class="form__title">Тел</div>
+        <label for="phone"></label>
+        <input type="tel" name="phone" id="phone" placeholder="+7 XXX XX XX*">
+      </div>
+      <div class="form__email">
+        <div class="form__title">E-mail</div>
+        <label for="email"></label>
+        <input type="email" name="email" id="email" placeholder="Ваш email*">
+      </div>
+      <div class="form__desc">
+        <div class="form__title">Доп</div>
+        <label for="text"></label>
+        <textarea name="text" id="text">Опишите все ваши  пожелания к заказу</textarea>
+      </div>
+      <span class="form__besure">* Поля обязательны для заполнения</span>
+      <button type="submit">Отправить заказ</button>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__social">
+        <div class="page-footer__social-inst"><a href="#"></a></div>
+        <div class="page-footer__social-fb"><a href="#"></a></div>
+        <div class="page-footer__social-tw"><a href="#"></a></div>
+      </div>
+      <div class="page-footer__copyright">Разработано</div>
+    </footer>
+  </body>
+</html>
