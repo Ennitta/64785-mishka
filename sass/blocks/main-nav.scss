@@ -1,0 +1,23 @@
+.main-nav {
+
+  &__list {
+    @include list-clear;
+  }
+
+  &__item {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+
+    a {
+      display: block;
+      padding: 28px;
+      text-decoration: none;
+      outline: 1px solid black;
+    }
+  }
+
+  &__search {
+    width: 100%;
+  }
+}
