@@ -1,0 +1,25 @@
+.info {
+  padding: 0 30px;
+  margin-top: 30px;
+
+  &__title {
+    margin-bottom: 90px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__list {
+    @include list-clear;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 700;
+  }
+
+  &__item {
+    margin-bottom: 90px;
+
+    &--6 {
+      margin-bottom: 60px;
+    }
+  }
+}
