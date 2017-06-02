@@ -1,0 +1,19 @@
+.contacts {
+  padding: 0 30px;
+  margin-bottom: 40px;
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &__wrapper {
+    line-height: 30px;
+    color: #444444;
+  }
+
+  &__email-margin, &__address-margin {
+    margin-left: 28px;
+  }
+}
