@@ -8,23 +8,27 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html">
-        <img src="#" class="page-header__logo" alt="Мишка">
-      </a>
-      <nav class="main-nav">
+      <div class="page-header__logo">
+       <a href="index.html">
+         <img src="img/logo-mobile.svg" alt="Мишка" width="86" height="35">
+       </a>
+     </div>
+     <nav class="main-nav">
         <span class="main-nav__toggle-close"></span>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a>Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__item"><input type="search" name="search" placeholder="Поиск по сайту"></li>
+          <li class="main-nav__item">
+            <input type="search" name="search" class="main-nav__search" placeholder="Поиск по сайту">
+          </li>
           <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
         </ul>
       </nav>
       <span class="page-header__toggle-open"></span>
     </header>
-    <main class="content">
-      <h1 class="content__title">Каталог товаров</h1>
-      <div class="catalog">
+    <main class="catalog">
+      <h1 class="catalog__title">Каталог товаров</h1>
+      <div class="catalog__container">
         <section class="catalog__wrapper">
           <div class="catalog__image">
             <img src="#" alt="Зайчик">

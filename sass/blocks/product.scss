@@ -22,14 +22,25 @@
     color: #444444;
   }
 
-  table {
-    color: #444444;
+  &__table {
+    width: 100%;
     margin-bottom: 30px;
+    color: #444444;
+    border-collapse: collapse;
+
+    tr {
+      border-bottom: 1px solid #ececec;
+    }
+
+    td {
+      padding: 5px 0;
+    }
   }
 
   &__price {
     padding: 25px 0;
     font-size: 17px;
+    font-weight: 700;
     color: #444444;
     text-align: center;
   }
