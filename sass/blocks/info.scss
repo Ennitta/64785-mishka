@@ -1,9 +1,9 @@
 .info {
   padding: 0 30px;
   margin-top: 30px;
+  margin-bottom: 60px;
 
   &__title {
-    margin-bottom: 90px;
     font-size: 25px;
     line-height: 30px;
   }
@@ -16,10 +16,30 @@
   }
 
   &__item {
-    margin-bottom: 90px;
+    padding-top: 90px;
+
+    &--1 {
+      background: url(../../img/icon-feature-1.svg) no-repeat 0 35%;
+    }
+
+    &--2 {
+      background: url(../../img/icon-feature-2.svg) no-repeat 0 35%;
+    }
+
+    &--3 {
+      background: url(../../img/icon-feature-3.svg) no-repeat 0 35%;
+    }
+
+    &--4 {
+      background: url(../../img/icon-feature-4.svg) no-repeat 0 35%;
+    }
+
+    &--5 {
+      background: url(../../img/icon-feature-5.svg) no-repeat 0 35%;
+    }
 
     &--6 {
-      margin-bottom: 60px;
+      background: url(../../img/icon-feature-6.svg) no-repeat 0 35%;
     }
   }
 }

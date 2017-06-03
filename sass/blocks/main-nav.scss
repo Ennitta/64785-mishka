@@ -5,7 +5,7 @@
   }
 
   &__item {
-    display: none;
+    display: block;
 
     a, input {
       display: block;
@@ -27,7 +27,6 @@
   &__search {
     width: 100%;
     border: none;
-    text-align: center;
     outline: none;
   }
 }

@@ -8,12 +8,13 @@
     line-height: 30px;
   }
 
-  &__wrapper {
+  &__table {
     line-height: 30px;
     color: #444444;
   }
 
-  &__email-margin, &__address-margin {
-    margin-left: 28px;
+  &__row-1 {
+    width: 20%;
+    outline: 1px solid black;
   }
 }
