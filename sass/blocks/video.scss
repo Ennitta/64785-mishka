@@ -1,0 +1,30 @@
+.video {
+  margin: 0 30px;
+  margin-bottom: 60px;
+
+  &__title {
+    padding: 24px 0;
+    padding-left: 90px;
+    font-size: 17px;
+    border: 1px solid #ececec;
+  }
+
+  &__image {
+    max-height: 150px;
+  }
+
+  &__desc {
+    padding: 30px 35px;
+    border: 1px solid #ececec;;
+  }
+
+  &__info {
+    margin-bottom: 25px;
+    font-size: 13px;
+    color: #444444;
+  }
+
+  &__btn {
+    @include base-btn;
+  }
+}

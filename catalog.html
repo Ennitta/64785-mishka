@@ -4,60 +4,69 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <img src="#" class="page-header__logo" alt="Мишка">
+      <div class="page-header__logo">
+        <a href="index.html">
+          <img src="img/logo-mobile.svg" alt="Мишка" width="86" height="35">
+        </a>
+      </div>
       <nav class="main-nav">
         <span class="main-nav__toggle-close"></span>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
-          <li class="main-nav__item"><input type="search" name="search" placeholder="Поиск по сайту"></li>
+          <li class="main-nav__item"><a>Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item">
+            <input type="search" name="search" class="main-nav__search" placeholder="Поиск по сайту">
+          </li>
           <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
         </ul>
       </nav>
       <span class="page-header__toggle-open"></span>
     </header>
     <main class="content">
-      <h1 class="content__title">Каталог товаров</h1>
+      <h1 class="content__caption">Каталог товаров</h1>
       <div class="catalog">
         <section class="catalog__wrapper">
           <div class="catalog__image">
-            <img src="#" alt="Зайчик">
+            <img src="img/photo-1-mobile@1x.jpg" alt="Зайчик" width="260" height="195">
           </div>
-          <div class="catalog__discription">
-            <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
-            <div class="catalog__info">Рост 30 см, вес 200 г</div>
+          <div class="catalog__item">
+            <h2 class="catalog__caption">Зайчик-попрыгайчик</h2>
+            <div class="catalog__desc">Рост 30 см, вес 200 г</div>
             <div class="catalog__price">1 200 руб.</div>
           </div>
         </section>
         <section class="catalog__wrapper">
           <div class="catalog__image">
-            <img src="#" alt="Корзинка">
+            <img src="img/photo-2-mobile@1x.jpg" alt="Корзинка" width="260" height="195">
           </div>
-          <div class="catalog__discription">
-            <h2 class="ccatalog__title">Корзинка для белья</h2>
-            <div class="catalog__info">Диаметр 15 см, высота 10 см</div>
+          <div class="catalog__item">
+            <h2 class="catalog__caption">Корзинка для белья</h2>
+            <div class="catalog__desc">Диаметр 15 см, высота 10 см</div>
             <div class="catalog__price">690 руб.</div>
           </div>
         </section>
         <section class="catalog__wrapper">
           <div class="catalog__image">
-            <img src="#" alt="Большая корзинка">
+            <img src="img/photo-3-mobile@1x.jpg" alt="Большая корзинка" width="260" height="195">
           </div>
-          <div class="catalog__discription">
-            <h2 class="catalog__title">Большая корзинка для игрушек</h2>
-            <div class="catalog__info">Диаметр 30 см, высота 30 см</div>
+          <div class="catalog__item">
+            <h2 class="catalog__caption">Большая корзинка для игрушек</h2>
+            <div class="catalog__desc">Диаметр 30 см, высота 30 см</div>
             <div class="catalog__price">1 500 руб.</div>
           </div>
         </section>
-        <div class="video">
-          <h2 class="video__title">Процесс производства</h2>
-          <div class="video__image">
-            <img src="#" alt="Видео">
-          </div>
-          <p class="video__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное о том, как появляются наши товары.</p>
+      </div>
+      <div class="video">
+        <h2 class="video__title">Процесс производства</h2>
+        <div class="video__image">
+          <img src="img/video-mobile@1x.jpg" alt="Видео" width="260" height="150">
+        </div>
+        <div class="video__desc">
+          <p class="video__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <button type="submit" class="video__btn">Сделать заказ</button>
         </div>
       </div>

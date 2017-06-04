@@ -1,0 +1,34 @@
+.contacts {
+  padding: 0 30px;
+  margin-bottom: 40px;
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &__table {
+    line-height: 30px;
+    color: #444444;
+
+    tr {
+      vertical-align: top;
+    }
+  }
+
+  &__row-1 {
+    width: 30%;
+    height: 60px;
+  }
+
+  &__row-2 {
+
+    a {
+      display: block;
+      color: #444444;
+      text-decoration: none;
+      border-bottom: 1px solid #62d1ba;
+    }
+  }
+}

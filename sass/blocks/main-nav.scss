@@ -1,0 +1,32 @@
+.main-nav {
+
+  &__list {
+    @include list-clear;
+  }
+
+  &__item {
+    display: none;
+
+    a, input {
+      display: block;
+      font-size: 17px;
+      line-height: 24px;
+      font-weight: 700;
+      padding: 28px;
+      padding-left: 80px;
+      border-top: 1px solid #ececec;
+      color: black;
+      text-align: left;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__search {
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+}
