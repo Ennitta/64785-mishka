@@ -11,10 +11,24 @@
   &__table {
     line-height: 30px;
     color: #444444;
+
+    tr {
+      vertical-align: top;
+    }
   }
 
   &__row-1 {
-    width: 20%;
-    outline: 1px solid black;
+    width: 30%;
+    height: 60px;
+  }
+
+  &__row-2 {
+
+    a {
+      display: block;
+      color: #444444;
+      text-decoration: none;
+      border-bottom: 1px solid #62d1ba;
+    }
   }
 }
