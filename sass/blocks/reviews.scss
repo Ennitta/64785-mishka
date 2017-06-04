@@ -1,0 +1,56 @@
+.reviews {
+  padding: 0 30px;
+  margin-bottom: 40px;
+
+  &__title {
+    margin-bottom: 35px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__list {
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__author {
+    font-size: 17px;
+  }
+
+  &__author-color {
+    color: #444444;
+  }
+
+  &__arrows {
+    position: relative;
+    margin-bottom: 35px;
+    min-height: 50px;
+    outline: 1px solid #ececec;
+    cursor: pointer;
+
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 50px;
+    }
+
+    &::before {
+      background: url(../../img/icon-left-arrow.svg) no-repeat 50% 50%;
+      border-right: 1px solid #ececec;
+    }
+
+    &::after {
+      background: url(../../img/icon-right-arrow.svg) no-repeat 50% 50%;
+      transform: translateX(100%);
+    }
+  }
+
+  &__btn {
+    @include base-btn;
+  }
+}
