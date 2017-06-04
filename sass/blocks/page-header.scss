@@ -1,16 +1,15 @@
 .page-header {
   position: relative;
-  padding-top: 20px;
-  padding-bottom: 15px;
 
   &__logo {
     text-align: center;
+    padding-bottom: 15px;
   }
 
   &__toggle-open {
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 10px;
+    right: 9%;
     width: 20px;
     height: 14px;
     background: url(../../img/icon-menu-open.svg) no-repeat 50% 50%;
@@ -20,11 +19,28 @@
   &__toggle-close {
     display: none;
     position: absolute;
-    top: 27px;
-    right: 29px;
+    top: 7px;
+    right: 9%;
     width: 21px;
     height: 21px;
     background: url(../../img/icon-menu-close.svg) no-repeat 50% 50%;
     cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    height: 145px;
+
+    &__logo {
+      position: relative;
+      padding-left: 6%;
+      top: 20px;
+      text-align: left;
+    }
+
+    &__toggle-open, &__toggle-close {
+      display: none;
+    }
   }
 }

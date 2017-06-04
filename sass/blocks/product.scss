@@ -1,5 +1,5 @@
 .product {
-  padding: 0 30px;
+  padding: 0 6%;
   padding-bottom: 35px;
   border-bottom: 2px solid #ececec;
 
@@ -37,6 +37,11 @@
     }
   }
 
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
   &__price {
     padding: 25px 0;
     font-size: 17px;
@@ -47,5 +52,40 @@
 
   &__btn {
     @include base-btn;
+  }
+}
+@media (min-width: 768px) {
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+    &__title {
+      width: 75%;
+      margin-bottom: 55px;
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &__hit {
+      width: 15%;
+      margin: 0;
+      padding-right: 10px;
+      text-align: center;
+    }
+
+    &__wrapper {
+      width: 43%;
+    }
+
+    &__img {
+      width: 50%;
+    }
+
+    &__block {
+      width: 43%;
+      margin-top: -130px;
+    }
   }
 }

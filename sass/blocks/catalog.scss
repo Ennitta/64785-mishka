@@ -6,11 +6,16 @@
   }
 
   &__image {
-    max-height: 195px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__item {
-    padding: 30px;
+    padding: 30px 9%;
     border: 1px solid #ececec;
   }
 

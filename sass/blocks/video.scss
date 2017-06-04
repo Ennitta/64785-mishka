@@ -1,20 +1,25 @@
 .video {
-  margin: 0 30px;
+  margin: 0 9%;
   margin-bottom: 60px;
 
   &__title {
     padding: 24px 0;
-    padding-left: 90px;
+    padding-left: 28%;
     font-size: 17px;
     border: 1px solid #ececec;
   }
 
   &__image {
-    max-height: 150px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__desc {
-    padding: 30px 35px;
+    padding: 30px 10%;
     border: 1px solid #ececec;;
   }
 

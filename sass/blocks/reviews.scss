@@ -1,5 +1,5 @@
 .reviews {
-  padding: 0 30px;
+  padding: 0 6%;
   margin-bottom: 40px;
 
   &__title {
@@ -10,7 +10,6 @@
 
   &__list {
     line-height: 30px;
-    margin-bottom: 35px;
   }
 
   &__text {
@@ -19,6 +18,7 @@
 
   &__author {
     font-size: 17px;
+    margin-bottom: 35px;
   }
 
   &__author-color {
@@ -52,5 +52,54 @@
 
   &__btn {
     @include base-btn;
+  }
+}
+@media (min-width: 768px) {
+  .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+    padding-top: 70px;
+    background: url(../../img/review@1x.jpg) no-repeat 0 50%;
+
+    &__title {
+      width: 50%;
+      margin-right: 25%;
+      margin-bottom: 0;
+      font-size: 43px;
+      line-height: 50px;
+      order: 1;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 60px;
+      order: 3;
+    }
+
+    &__text {
+      width: 100%;
+      margin-bottom: 55px;
+    }
+
+    &__author {
+      width: 50%;
+      margin-right: 25%;
+    }
+
+    &__arrows {
+      width: 25%;
+      outline: none;
+
+      &::before, &::after {
+        border: none;
+      }
+    }
+
+    &__btn {
+      width: 25%;
+      order: 2;
+    }
   }
 }
