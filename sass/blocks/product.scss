@@ -79,6 +79,11 @@
       width: 43%;
     }
 
+    &__desc {
+      font-size: 17px;
+      line-height: 30px;
+    }
+
     &__img {
       width: 50%;
     }
@@ -86,6 +91,10 @@
     &__block {
       width: 43%;
       margin-top: -130px;
+    }
+
+    &__price {
+      font-size: 20px;
     }
   }
 }
