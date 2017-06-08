@@ -58,13 +58,32 @@
     }
 
     &__list {
-      width: 50%;
+      width: 47%;
+      margin-right: 3%;
       font-size: 20px;
       line-height: 22px;
     }
 
     &__item {
       padding-top: 105px;
+    }
+  }
+}
+@media (min-width: 1250px) {
+  .info {
+
+    &__title {
+      padding-left: 17%;
+      font-size: 53px;
+      line-height: 57px;
+    }
+
+    &__wrapper {
+      padding-left: 17%;
+    }
+
+    &__list {
+      width: 41%;
     }
   }
 }

@@ -81,6 +81,7 @@
     &__text {
       width: 100%;
       margin-bottom: 55px;
+      font-size: 17px;
     }
 
     &__author {
@@ -100,6 +101,28 @@
     &__btn {
       width: 25%;
       order: 2;
+    }
+  }
+}
+@media (min-width: 1250px) {
+  .reviews {
+    padding-left: 15%;
+    padding-right: 0;
+    margin: 0 6%;
+    margin-bottom: 70px;
+
+    &__title {
+      font-size: 53px;
+      line-height: 57px;
+    }
+
+    &__text {
+      width: 90%;
+    }
+
+    &__author {
+      width: 40%;
+      margin-right: 35%;
     }
   }
 }
