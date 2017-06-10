@@ -1,5 +1,5 @@
 .form {
-  margin: 0 30px;
+  margin: 0 6%;
   font-size: 17px;
   font-weight: 700;
 
@@ -27,12 +27,7 @@
     margin-bottom: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 60px;
-
-    &--padding {
-      padding: 0;
-      padding-left: 60px;
-    }
+    padding-left: 15%;
 
 
     input[type="radio"] + label:before {
@@ -78,7 +73,7 @@
     }
   }
 
-  &__login-name, &__login-surname, &__login-middlename, &__phone, &__email {
+  &__login-name, &__login-surname, &__login-middlename, &__contact-wrapper {
     margin-bottom: 20px;
     border-bottom: 2px solid #000000;
   }
@@ -120,5 +115,190 @@
     margin-top: 30px;
     margin-bottom: 55px;
     @include base-btn;
+  }
+}
+@media (min-width: 768px) {
+  .form {
+    margin: 0;
+    font-size: 19px;
+
+    &__type, &__color, &__login, &__contact, &__info {
+      display: flex;
+    }
+
+    &__type {
+      margin: 0 6%;
+      margin-bottom: 50px;
+    }
+
+    &__color {
+      margin-bottom: 70px;
+      padding: 0 6%;
+      padding-top: 50px;
+      background-color: #f1f1f1;
+    }
+
+    &__login {
+      margin: 0 6%;
+      margin-bottom: 30px;
+
+      label {
+        align-self: center;
+        width: 30%;
+      }
+
+      input {
+        width: 70%;
+      }
+    }
+
+    &__login-name, &__login-surname, &__login-middlename, &__contact-wrapper {
+      display: flex;
+      border: none;
+    }
+
+    &__login-name {
+
+      label {
+        width: 18%;
+      }
+
+      input {
+        width: 82%;
+      }
+    }
+
+    &__contact {
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+      padding: 50px 6%;
+      padding-bottom: 30px;
+      background-color: #f1f1f1;
+    }
+
+    &__contact-wrapper {
+
+      input {
+        width: 100%;
+        background-color: #f1f1f1;
+      }
+    }
+
+    &__info {
+      margin: 0 6%;
+    }
+
+    &__title, &__caption {
+      width: 25%;
+      padding-top: 10px;
+      font-size: 17px;
+    }
+
+    &__list, &__login-wrapper, &__contact-wrapper {
+      width: 75%;
+    }
+
+    &__list-color {
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 25px;
+    }
+
+    &__item {
+      padding-left: 12%;
+    }
+
+    &__item-color {
+      width: 38%;
+    }
+
+    &__view {
+      padding-left: 10px;
+      font-size: 19px;
+      border-bottom: 2px solid #000000;
+    }
+
+    &__desc {
+      width: 75%;
+    }
+
+    &__btn-wrapper {
+      display: flex;
+      margin: 0 6%;
+    }
+
+    &__besure {
+      align-self: center;
+      width: 65%;
+      font-size: 17px;
+      text-align: right;
+      order: 2;
+    }
+
+    &__btn {
+      width: 35%;
+      margin-top: 50px;
+      order: 1;
+    }
+  }
+}
+@media (min-width: 1250px) {
+  .form {
+
+    &__title, &__caption {
+      width: 15%;
+      text-align: center;
+    }
+
+    &__list-color {
+      width: 85%;
+    }
+
+    &__item {
+      padding-left: 8%;
+    }
+
+    &__item-color {
+      width: 25%;
+    }
+
+    &__login-wrapper {
+      width: 65%;
+
+      label {
+        width: 18%;
+      }
+
+      input {
+        width: 82%;
+      }
+    }
+
+    &__login-name {
+
+      label {
+        width: 10%;
+      }
+
+      input {
+        width: 90%;
+      }
+    }
+
+    &__contact-wrapper {
+
+      input {
+        width: 86%;
+      }
+    }
+
+    &__desc {
+      width: 65%;
+    }
+
+    &__btn-wrapper {
+      width: 58%;
+      margin-left: 19%;
+    }
   }
 }

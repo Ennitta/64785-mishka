@@ -8,23 +8,19 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
-        <a href="index.html">
-          <img src="img/logo-mobile.svg" alt="Мишка" width="86" height="35">
-        </a>
-      </div>
       <nav class="main-nav">
-        <span class="main-nav__toggle-close"></span>
+        <span class="main-nav__toggle-open"></span>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a>Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__item">
-            <input type="search" name="search" class="main-nav__search" placeholder="Поиск по сайту">
-          </li>
-          <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+          <li class="main-nav__logo"><a href="index.html"><img src="img/logo-mobile.svg" alt="Мишка" width="86" height="35"></a></li>
+          <li class="main-nav__item main-nav__item--end"><a>Каталог товаров</a></li>
+          <li class="main-nav__item main-nav__item--end"><a href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item main-nav__item--search"><button>Поиск по сайту</button></li>
+          <li class="main-nav__item main-nav__item--cart"><a href="#">Корзина: пока пуста</a></li>
+          <li class="main-nav__delivery">Бесплатная доставка по России</li>
+          <li class="main-nav__receipt">Новые поступления</li>
+          <li class="main-nav__sale">Распродажа</li>
         </ul>
       </nav>
-      <span class="page-header__toggle-open"></span>
     </header>
     <main class="content">
       <h1 class="content__caption">Каталог товаров</h1>
@@ -72,6 +68,7 @@
       </div>
     </main>
     <footer class="page-footer">
+      <img src="img/logo-mobile.svg" class="page-footer__logo" alt="Мишка" width="86" height="36">
       <div class="page-footer__social">
         <div class="page-footer__social-inst"><a href="#"></a></div>
         <div class="page-footer__social-fb"><a href="#"></a></div>

@@ -1,5 +1,5 @@
 .product {
-  padding: 0 30px;
+  padding: 0 6%;
   padding-bottom: 35px;
   border-bottom: 2px solid #ececec;
 
@@ -37,6 +37,14 @@
     }
   }
 
+  &__image {
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
   &__price {
     padding: 25px 0;
     font-size: 17px;
@@ -47,5 +55,89 @@
 
   &__btn {
     @include base-btn;
+  }
+}
+@media (min-width: 768px) {
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+    &__title {
+      width: 75%;
+      margin-bottom: 55px;
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &__hit {
+      width: 15%;
+      margin: 0;
+      padding-right: 10px;
+      text-align: center;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: space-between;
+      max-height: 650px;
+    }
+
+    &__wrapper {
+      width: 43%;
+      order: 1;
+    }
+
+    &__desc {
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    &__image {
+      width: 50%;
+      order: 3;
+    }
+
+    &__block {
+      width: 43%;
+      order: 2;
+    }
+
+    &__price {
+      font-size: 20px;
+    }
+  }
+}
+@media (min-width: 1250px) {
+  .product {
+    padding-bottom: 70px;
+
+    &__title {
+      width: 83%;
+      margin-bottom: 0;
+      font-size: 53px;
+      line-height: 57px;
+      order: 2;
+    }
+
+    &__hit {
+      width: 8%;
+      padding-left: 5%;
+      align-self: center;
+      order: 1;
+    }
+
+    &__container {
+      width: 83%;
+      margin-left: auto;
+      order: 3;
+    }
+
+    &__wrapper {
+      margin-top: 150px;
+    }
   }
 }

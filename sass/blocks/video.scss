@@ -1,20 +1,25 @@
 .video {
-  margin: 0 30px;
+  margin: 0 6%;
   margin-bottom: 60px;
 
   &__title {
     padding: 24px 0;
-    padding-left: 90px;
+    padding-left: 28%;
     font-size: 17px;
     border: 1px solid #ececec;
   }
 
   &__image {
-    max-height: 150px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__desc {
-    padding: 30px 35px;
+    padding: 30px 10%;
     border: 1px solid #ececec;;
   }
 
@@ -26,5 +31,71 @@
 
   &__btn {
     @include base-btn;
+  }
+}
+@media (min-width: 768px) {
+  .video {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      padding: 40px 15%;
+      font-size: 20px;
+      border-bottom: none;
+      order: 2;
+    }
+
+    &__image {
+      order: 1;
+    }
+
+    &__desc {
+      padding: 0 8%;
+      border-top: none;
+      order: 3;
+    }
+
+    &__info {
+      margin-bottom: 40px;
+      font-size: 15px;
+      line-height: 30px;
+    }
+
+    &__btn {
+      margin-bottom: 40px;
+    }
+  }
+}
+@media (min-width: 1250px) {
+  .video {
+    flex-wrap: wrap;
+    max-height: 455px;
+
+    &__title {
+      padding: 0;
+      padding-top: 100px;
+      padding-bottom: 40px;
+      padding-left: 5%;
+      margin: 0;
+      width: 30%;
+      order: 2;
+    }
+
+    &__image {
+      width: 65%;
+      order: 1;
+
+      img {
+        height: 455px;
+      }
+    }
+
+    &__desc {
+      padding: 0;
+      padding-left: 5%;
+      margin: 0;
+      width: 30%;
+      order: 3;
+    }
   }
 }
