@@ -1,5 +1,5 @@
 .catalog {
-  margin: 0 30px;
+  margin: 0 6%;
 
   &__wrapper {
     margin-bottom: 30px;
@@ -35,5 +35,63 @@
 
   &__price {
     font-weight: 700;
+  }
+}
+@media (min-width: 768px) {
+  .catalog {
+    margin-bottom: 55px;
+
+    &__wrapper {
+      display: flex;
+    }
+
+    &__image {
+      width: 50%;
+
+      img {
+        height: 334px;
+      }
+    }
+
+    &__item {
+      width: 40%;
+      padding: 30px 5%;
+    }
+
+    &__caption {
+      font-size: 20px;
+    }
+
+    &__desc {
+      font-size: 15px;
+    }
+
+    &__price {
+      font-size: 17px;
+    }
+  }
+}
+@media (min-width: 1250px) {
+  .catalog {
+    display: flex;
+    justify-content: space-between;
+
+    &__wrapper {
+      flex-direction: column;
+      width: 30%;
+      margin-bottom: 0;
+    }
+
+    &__image {
+      width: 100%;
+
+      img {
+        height: 462px;
+      }
+    }
+
+    &__item {
+      width: 90%;
+    }
   }
 }
